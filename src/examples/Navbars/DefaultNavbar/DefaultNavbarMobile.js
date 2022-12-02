@@ -1,20 +1,3 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-import { useState } from "react";
-
 // react-router components
 import { Link } from "react-router-dom";
 
@@ -25,17 +8,14 @@ import PropTypes from "prop-types";
 import Collapse from "@mui/material/Collapse";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-
-// Material Kit 2 React example components
 import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
 
 function DefaultNavbarMobile({ routes, open }) {
-  const [collapse, setCollapse] = useState("");
+  // const [collapse, setCollapse] = useState("");
 
-  const handleSetCollapse = (name) => (collapse === name ? setCollapse(false) : setCollapse(name));
+  // const handleSetCollapse = (name) => (collapse === name ? setCollapse(false) : setCollapse(name));
 
   const renderNavbarItems = routes.map(
     ({ name, icon, collapse: routeCollapses, href, route, collapse: navCollapse }) => (
@@ -43,8 +23,8 @@ function DefaultNavbarMobile({ routes, open }) {
         key={name}
         name={name}
         icon={icon}
-        collapseStatus={name === collapse}
-        onClick={() => handleSetCollapse(name)}
+        // collapseStatus={name === collapse}
+        // onClick={() => handleSetCollapse(name)}
         href={href}
         route={route}
         collapse={Boolean(navCollapse)}
