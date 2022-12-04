@@ -1,21 +1,29 @@
 {
-  "name": "material-kit-2-react",
-  "version": "2.0.0",
+  "name": "github-profile-generator",
+  "version": "0.0.2",
   "private": true,
-  "author": "Creative Tim",
-  "license": "See license in https://www.creative-tim.com/license",
-  "description": "React version of Material Kit 2 by Creative Tim",
-  "homepage": "https://demos.creative-tim.com/material-kit-react/#/",
+  "author": "Satish Umagol",
+  "description": "open source project to generate github profile",
+  "homepage": "https://umagol.github.io/github-profile-generator",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
+    "url": "https://github.com/umagol/GitHub-Profile-Generator/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/ct-material-kit-react.git"
+    "url": "git+https://github.com/umagol/GitHub-Profile-Generator"
   },
   "engines": {
     "node": "14 || 15 || 16",
     "npm": ">=6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
   },
   "dependencies": {
     "@emotion/cache": "11.10.5",
@@ -39,13 +47,6 @@
     "react-scripts": "5.0.1",
     "react-syntax-highlighter": "15.5.0",
     "web-vitals": "3.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
   },
   "eslintConfig": {
     "extends": [
