@@ -4,7 +4,6 @@
   "private": true,
   "author": "Satish Umagol",
   "description": "open source project to generate github profile",
-  "homepage": "https://umagol.github.io/github-profile-generator",
   "bugs": {
     "url": "https://github.com/umagol/GitHub-Profile-Generator/issues"
   },
@@ -29,9 +28,9 @@
     "@emotion/cache": "11.10.5",
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
-    "@mui/icons-material": "5.10.16",
-    "@mui/material": "5.10.16",
-    "@mui/styled-engine": "5.10.16",
+    "@mui/icons-material": "5.11.0",
+    "@mui/material": "5.11.0",
+    "@mui/styled-engine": "5.11.0",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "14.4.3",
@@ -70,6 +69,7 @@
     "eslint": "8.28.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "8.5.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-prettier": "4.2.1",
