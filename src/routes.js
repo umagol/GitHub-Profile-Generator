@@ -16,6 +16,13 @@ const routes = [
     component: <Home />,
   },
   {
+    name: "Templates",
+    icon: <Icon>web</Icon>,
+    route: "/templates",
+    dropdown: false,
+    component: <Templates />,
+  },
+  {
     name: "About Me",
     icon: <Icon>person</Icon>,
     route: "/about-us",
@@ -28,13 +35,6 @@ const routes = [
     route: "/contact-us",
     component: <ContactUs />,
     dropdown: false,
-  },
-  {
-    name: "Templates",
-    icon: <Icon>web</Icon>,
-    route: "/templates",
-    dropdown: false,
-    component: <Templates />,
   },
   {
     name: "github",
