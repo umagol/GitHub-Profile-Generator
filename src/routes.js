@@ -4,7 +4,8 @@ import Icon from "@mui/material/Icon";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Home from "pages/Home";
 import ContactUs from "pages/Contact";
-
+// import AboutUs from "pages/About-us";
+import Templates from "pages/Templates";
 
 const routes = [
   {
@@ -19,6 +20,7 @@ const routes = [
     icon: <Icon>person</Icon>,
     route: "/about-us",
     dropdown: false,
+    // component: <AboutUs />,
   },
   {
     name: "Contact Me",
@@ -32,6 +34,7 @@ const routes = [
     icon: <Icon>web</Icon>,
     route: "/templates",
     dropdown: false,
+    component: <Templates />,
   },
   {
     name: "github",
