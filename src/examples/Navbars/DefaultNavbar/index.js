@@ -453,6 +453,9 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
         })}
       >
         <MKBox display="flex" justifyContent="space-between" alignItems="center">
+          { light ? <img src='https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg' alt="logo" width="40" />:
+           <img src='https://raw.githubusercontent.com/fontello/brandico.font/master/src/svg/github.svg' alt="logo" width="40" />
+          }
           <MKBox
             component={Link}
             to="/"
@@ -460,8 +463,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             py={transparent ? 1.5 : 0.75}
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
-            <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
-              {brand}
+            <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>{brand}
             </MKTypography>
           </MKBox>
           <MKBox
