@@ -25,6 +25,8 @@ import footerRoutes from "footer.routes";
 // Images
 import bgImage from "assets/images/bg-about-us.jpg";
 
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <>
@@ -80,9 +82,11 @@ function Home() {
               We&apos;re constantly trying to express ourselves and actualize our dreams. If you
               have the opportunity to play this game
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
-            </MKButton>
+            <Link to="/editor">
+              <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
+                Get Started
+              </MKButton>
+            </Link>
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on
             </MKTypography>

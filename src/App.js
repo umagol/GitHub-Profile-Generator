@@ -5,6 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "assets/theme";
 import routes from "routes";
 import Home from "pages/Home";
+import Editor from "pages/Editor";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -35,6 +36,7 @@ export default function App() {
         {getRoutes(routes)}
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/editor" element={<Editor/>} />
         {/* TODO */}
         {/* <Route path="/page-not-found" element={<Home />} /> */}
       </Routes>
